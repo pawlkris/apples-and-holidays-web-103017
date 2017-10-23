@@ -61,9 +61,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
     #to iterate over the "data" hash, we can use the following line:
-   puts("#{season.capitalize}:")
+   puts("#{season.to_s.capitalize}:")
     holiday.each do |holiday, value|
-      puts "#{holiday.to_s.capitalize.inspect}: #{value.inspect}"
+      puts "#{holiday.to_s.capitalize.inspect}: #{value.to_s.inspect}"
     end
   end
 end
